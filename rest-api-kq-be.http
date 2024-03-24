@@ -1,0 +1,34 @@
+POST {{host}}/universities
+content-type: application/json
+
+{
+  "country": "Canada"
+}
+
+<> 2023-09-10T192617.200.json
+<> 2023-09-10T185809.200.json
+
+### GET universities
+GET {{host}}/universities
+
+
+### POST register
+POST {{host}}/user/register
+content-type: application/json
+
+{
+  "userEmail": "n01414195@humbermail.ca",
+  "userPassword": "31121995",
+  "subject": "yoursubject",
+  "school": "Humber College",
+  "role": "4"
+}
+
+### POST search textbooks by isbn
+
+POST {{host}}/textbook/search-textbook
+content-type: application/json
+
+{
+  "resourceISBN": "978-1982181284"
+}
